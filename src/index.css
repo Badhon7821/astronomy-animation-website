@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px var(--bg-secondary);
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #19ffec;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  /* height: 100%; */
+}
+
+html {
+  font-size: 62.2%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  background-color: var(--bg-primary);
+  color: var(--color-lighter);
+  background-image: url("./img/pattern.gif");
+}
+
+:root {
+  --bg-primary: #191a2b;
+  --bg-secondary: #000114;
+  --color-darker: #464646;
+  --color-primery: #9eb4cc;
+  --color-secondary: #19ffec;
+  --color-lighter: #f5f0ec;
+  --color-dark: #191a2b;
+}
+
+.section-title {
+  font-family: Syncopate, sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  padding-bottom: 5vw;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 5vw;
+}
+
+section {
+  padding: 10vh 0;
+}
+
+.min-h-100vh {
+  min-height: 100vh;
+}
+
+.navbar {
+  background-image: url(https://i.gifer.com/WG8P.gif);
+  background-color: var(--bg-secondary);
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+
+.navbar > img {
+  position: absolute;
+  /* bottom: 0; */
+  transform: rotate(90deg);
+  z-index: 10;
+  top: -2rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5vw;
+  padding: 1.5rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  /* font-size: ; */
+  color: var(--color-lighter);
+  font-size: 1.5rem;
+}
+
+.logo h2 {
+  color: var(--color-primery);
+}
+
+.hero {
+  min-height: 90vh;
+  background-image: url(https://i.gifer.com/WG8P.gif);
+  background-color: var(--bg-secondary);
+  position: relative;
+}
+
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 6rem;
+}
+
+.hero > img {
+  position: absolute;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hero-left h1 {
+  font-size: 5vw;
+  line-height: 1.3;
+  position: relative;
+  z-index: 3;
+  /* display: inline-block; */
+}
+
+.hero-h1-f .hero-h1-l {
+  position: relative;
+}
+
+.hero-shutter1,
+.hero-shutter2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(https://i.gifer.com/WG8P.gif);
+  background-color: var(--bg-secondary);
+
+  overflow: hidden;
+}
+
+.hero-right img {
+  width: 95%;
+  margin: auto;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  color: var(--color-secondary);
+  display: inline-block;
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: 0.1rem solid var(--color-primery);
+  border-radius: 0.8rem;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn:hover {
+  color: var(--color-dark);
+  background-color: var(--color-secondary);
+}
+
+.hero .btn {
+  margin-top: 2rem;
+}
+
+.mission-title {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 400;
+  color: var(--color-primery);
+  padding: 8rem 0;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-height: 30rem;
+  position: relative;
+}
+.card-shutter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-secondary);
+}
+
+.card h3 {
+  font-size: 2.2rem;
+  color: var(--color-primery);
+  height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card p {
+  font-size: 1.7rem;
+  color: var(--color-darker);
+  line-height: 1.3;
+  height: 7rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+
+.card svg {
+  fill: #19ffec;
+  stroke: #19ffec;
+  background-color: #171727;
+  border-radius: 50%;
+  padding: 1.2rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.card a {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  color: blueviolet;
+}
+
+.gallery {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  grid-auto-flow: dense;
+  padding: 2rem;
+  /* border: 1px solid #19ffec; */
+  /* background-color: rgba(255, 255, 255, 0.05); */
+}
+
+.gallery-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.gallery-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.gallery-wrapper > div {
+  overflow: hidden;
+}
+
+.gallery-wrapper img:hover {
+  transform: scale(1.05);
+}
+.horizontal {
+  grid-column: auto/span 2;
+}
+
+.vertical {
+  grid-row: auto / span 2;
+}
+.squre {
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+}
+
+.horizontal-sm {
+  grid-column: auto / span 2;
+}
+.gallery-shutter {
+  position: absolute;
+  background-color: #252636;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  /* width: 100%; */
+}
