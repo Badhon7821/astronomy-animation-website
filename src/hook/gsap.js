@@ -199,7 +199,7 @@ export const useGsapShowMoon = (item, trig) => {
       },
       {
         scale: 1,
-        duration: 4,
+        duration: 2,
         ease: Expo.easeInOut,
         scrollTrigger: {
           trigger: trig.current,
@@ -266,17 +266,39 @@ export const useGsapMissionCard = (item, trig) => {
     gsap.fromTo(
       el,
       {
-        y: "80%",
+        y: "60%",
         opacity: 0,
       },
       {
         y: 0,
         opacity: 1,
-        duration: 0.8,
+        duration: 0.5,
+        trigger: 0.5,
         scrollTrigger: {
           trigger: trig.current,
-          start: "top 5%",
-          end: "bottom 5%",
+          start: "top 80%",
+          // end: "bottom 100%",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+export const useCardShutterAveil = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        width: "100%",
+      },
+      {
+        width: 0,
+        duration: 0.8,
+        ease: Expo.easeIn,
+        scrollTrigger: {
+          trigger: trig.current,
           toggleActions: "play reverse play reverse",
         },
       }
@@ -291,10 +313,12 @@ export const useGsapGalleryTitleShutter = (item, trig) => {
     gsap.fromTo(
       el,
       {
-        width: "100%",
+        x: "100%",
+        opacity: 0,
       },
       {
-        width: 0,
+        x: 0,
+        opacity: 1,
         duration: 1.4,
         stagger: 0.2,
         ease: Expo.easeIn,
@@ -331,23 +355,81 @@ export const useGsapGalleryPhotoUnveil = (itemArr, trig) => {
   }, []);
 };
 
-export const useCardShutterAveil = (item, trig) => {
+export const useGsapBlogCardAvail = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+    gsap.fromTo(
+      el,
+      {
+        y: "60%",
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        trigger: 0.5,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top 80%",
+          // end: "bottom 100%",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+
+export const useGsapFooterTitleAveil = (item, trig) => {
   useEffect(() => {
     const el = item.current;
 
     gsap.fromTo(
       el,
       {
-        width: "100%",
+        x: "-100%",
       },
       {
-        width: 0,
-        duration: 1.2,
-        ease: Expo.easeIn,
-        scrollTrigger: {
-          trigger: trig.current,
-          toggleActions: "play reverse play reverse",
-        },
+        x: 0,
+        duration: 0.6,
+      }
+    );
+  }, []);
+};
+
+export const useGsapFooterMenu = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        y: "100%",
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.6,
+      }
+    );
+  }, []);
+};
+
+export const useGsapFooterRight = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "100%",
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.6,
       }
     );
   }, []);

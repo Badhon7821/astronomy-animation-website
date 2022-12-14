@@ -37,16 +37,15 @@ const Gallery = () => {
     galleryImgRef12,
   ];
 
-  // useGsapPhotoDropping(imgArr, gallertRef);
   useGsapGalleryPhotoUnveil(imgArr, galleryRef);
-  useGsapGalleryTitleShutter(wrapGalleryTitle, galleryRef);
+  useGsapGalleryTitleShutter(galleryTitleRef, galleryRef);
 
   return (
     <section className="gallery">
       <div className="wrapper" ref={galleryRef}>
         <h2 ref={galleryTitleRef} className="section-title">
           gallery
-          <span ref={wrapGalleryTitle} className="gallery-shutter"></span>
+          {/* <span ref={wrapGalleryTitle} className="gallery-shutter"></span> */}
         </h2>
         <div className="gallery-wrapper">
           <div className="horizontal">

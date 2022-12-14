@@ -1,8 +1,8 @@
 import React from "react";
+import Blog from "./Blog";
 import Gallery from "./Gallery";
 import Hero from "./Hero";
 import Missions from "./Missions";
-import Navbar from "./Navbar";
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <Hero />
       <Missions />
       <Gallery />
+      <Blog />
     </div>
   );
 };

@@ -15,10 +15,8 @@ const Hero = () => {
   const heroShutterParagraphRef = useRef(null);
   const buttonRef = useRef(null);
 
-  // const shutterArr = [heroShutter1Ref, heroShutter2Ref];
-
-  useGsapHeroTitleUnvail(heroShutter1Ref, heroRef, 1);
-  useGsapShutterUnvail2(heroShutter2Ref, heroRef, 1.2);
+  useGsapHeroTitleUnvail(heroShutter1Ref, heroRef, 0.5);
+  useGsapShutterUnvail2(heroShutter2Ref, heroRef, 0.7);
   useGsapShowMoon(moonRef, heroRef);
   useGsapShutterParagraphUnvail(heroShutterParagraphRef, heroRef, 1.6);
   useGsapButtonUnvail(buttonRef, heroRef, 2);
@@ -36,7 +34,7 @@ const Hero = () => {
               the solar system
               {/* <span className="hero-shutter2"></span> */}
             </h1>
-            <p ref={heroShutterParagraphRef}>
+            <p className="hero-desc" ref={heroShutterParagraphRef}>
               Most of us can only name a few of the seven wonders of the world,
               but historians, archaeologists, and pub quizzers can
             </p>
