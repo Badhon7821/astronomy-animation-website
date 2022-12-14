@@ -18,9 +18,9 @@ const Footer = () => {
   const footerMenuRef = useRef(null);
   const footerRightRef = useRef(null);
 
-  useGsapFooterTitleAveil(footerTitleRef);
-  useGsapFooterMenu(footerMenuRef);
-  useGsapFooterRight(footerRightRef);
+  useGsapFooterTitleAveil(footerTitleRef, footerRef);
+  useGsapFooterMenu(footerMenuRef, footerRef);
+  useGsapFooterRight(footerRightRef, footerRef);
 
   return (
     <footer ref={footerRef}>

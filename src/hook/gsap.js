@@ -391,6 +391,10 @@ export const useGsapFooterTitleAveil = (item, trig) => {
       {
         x: 0,
         duration: 0.6,
+        scrollTrigger: {
+          trigger: trig.current,
+          toggleActions: "play reverse play reverse",
+        },
       }
     );
   }, []);
@@ -410,6 +414,10 @@ export const useGsapFooterMenu = (item, trig) => {
         y: 0,
         opacity: 1,
         duration: 0.6,
+        scrollTrigger: {
+          trigger: trig.current,
+          toggleActions: "play reverse play reverse",
+        },
       }
     );
   }, []);
@@ -429,6 +437,10 @@ export const useGsapFooterRight = (item, trig) => {
         x: 0,
         opacity: 1,
         duration: 0.6,
+        scrollTrigger: {
+          trigger: trig.current,
+          toggleActions: "play reverse play reverse",
+        },
       }
     );
   }, []);
