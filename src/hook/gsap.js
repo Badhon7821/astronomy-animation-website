@@ -380,57 +380,57 @@ export const useGsapBlogCardAvail = (item, trig) => {
   }, []);
 };
 
-export const useGsapFooterTitleAveil = (item, trig) => {
-  useEffect(() => {
-    const el = item.current;
+// export const useGsapFooterTitleAveil = (item, trig) => {
+//   useEffect(() => {
+//     const el = item.current;
 
-    gsap.fromTo(
-      el,
-      {
-        x: "-100%",
-      },
-      {
-        x: 0,
-        duration: 0.6,
-      }
-    );
-  }, []);
-};
+//     gsap.fromTo(
+//       el,
+//       {
+//         x: "-100%",
+//       },
+//       {
+//         x: 0,
+//         duration: 0.6,
+//       }
+//     );
+//   }, []);
+// };
 
-export const useGsapFooterMenu = (item, trig) => {
-  useEffect(() => {
-    const el = item.current;
+// export const useGsapFooterMenu = (item, trig) => {
+//   useEffect(() => {
+//     const el = item.current;
 
-    gsap.fromTo(
-      el,
-      {
-        y: "100%",
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.6,
-      }
-    );
-  }, []);
-};
+//     gsap.fromTo(
+//       el,
+//       {
+//         y: "100%",
+//         opacity: 0,
+//       },
+//       {
+//         y: 0,
+//         opacity: 1,
+//         duration: 0.6,
+//       }
+//     );
+//   }, []);
+// };
 
-export const useGsapFooterRight = (item, trig) => {
-  useEffect(() => {
-    const el = item.current;
+// export const useGsapFooterRight = (item, trig) => {
+//   useEffect(() => {
+//     const el = item.current;
 
-    gsap.fromTo(
-      el,
-      {
-        x: "100%",
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.6,
-      }
-    );
-  }, []);
-};
+//     gsap.fromTo(
+//       el,
+//       {
+//         x: "100%",
+//         opacity: 0,
+//       },
+//       {
+//         x: 0,
+//         opacity: 1,
+//         duration: 0.6,
+//       }
+//     );
+//   }, []);
+// };

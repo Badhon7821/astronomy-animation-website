@@ -6,31 +6,31 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
-import {
-  useGsapFooterMenu,
-  useGsapFooterRight,
-  useGsapFooterTitleAveil,
-} from "./hook/gsap";
+// import {
+//   useGsapFooterMenu,
+//   useGsapFooterRight,
+//   useGsapFooterTitleAveil,
+// } from "./hook/gsap";
 
 const Footer = () => {
-  const footerRef = useRef(null);
-  const footerTitleRef = useRef(null);
-  const footerMenuRef = useRef(null);
-  const footerRightRef = useRef(null);
+  // const footerRef = useRef(null);
+  // const footerTitleRef = useRef(null);
+  // const footerMenuRef = useRef(null);
+  // const footerRightRef = useRef(null);
 
-  useGsapFooterTitleAveil(footerTitleRef, footerRef);
-  useGsapFooterMenu(footerMenuRef, footerRef);
-  useGsapFooterRight(footerRightRef, footerRef);
+  // useGsapFooterTitleAveil(footerTitleRef);
+  // useGsapFooterMenu(footerMenuRef);
+  // useGsapFooterRight(footerRightRef);
 
   return (
-    <footer ref={footerRef}>
+    <footer>
       <div className="footer-wrapper wrapper">
-        <div className="footer-logo" ref={footerTitleRef}>
+        <div className="footer-logo">
           <div className="logo">
-            <h2>astronomy</h2>
+            <h2>GlaxyMission</h2>
           </div>
         </div>
-        <div className="footer-menu" ref={footerMenuRef}>
+        <div className="footer-menu">
           <li>
             <Link to={"/"}>home</Link>
           </li>
@@ -44,7 +44,7 @@ const Footer = () => {
             <Link to={"/blog"}>blog</Link>
           </li>
         </div>
-        <div ref={footerRightRef} className="footer-contact">
+        <div className="footer-contact">
           <form action="">
             <input type="email" name="" id="" placeholder="enter your email" />
             <input type="submit" value="submit" />
